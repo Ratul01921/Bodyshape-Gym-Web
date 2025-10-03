@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Link: Font Awesome -->
-     <script src="https://kit.fontawesome.com/202877dedb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/202877dedb.js" crossorigin="anonymous"></script>
 
     <style>
         body {
@@ -27,7 +27,66 @@
 </head>
 
 <body>
-    <h2 class=" text-3xl">hellow world</h2>
+    <header id="Home" class="bg-black text-white">
+        <!-- Navbar -->
+        <nav class="bg-black/80 border-b border-white/20 backdrop-blur-md p-4 fixed top-0 left-0 w-full z-50">
+            <div class="flex justify-between items-center w-11/12 mx-auto text-white relative">
+
+                <!-- Logo -->
+                <div class="flex flex-col justify-center items-center">
+                    <div class="flex justify-center items-center gap-2">
+                        <img src="./images/logo_left.png" alt="">
+                        <p class="text-[#F66844] text-2xl">Bodyshape</p>
+                        <img src="./images/logo_right.png" alt="">
+                    </div>
+                    <p class="text-[#F66844] text-[12px] font-normal">Unleash your inner athlete</p>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-white text-2xl mt-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Menu -->
+                <ul id="menu"
+                    class="hidden md:flex flex-col md:flex-row justify-center items-center gap-10 text-base absolute md:static top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent md:backdrop-blur-0 p-4 md:p-0 transition-all duration-300 space-y-4 md:space-y-0">
+                    <li><a href="#Home"
+                            class="pb-1 border-b-2 border-transparent hover:border-[#F66844] transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="#Services"
+                            class="pb-1 border-b-2 border-transparent hover:border-[#F66844] transition-all duration-300">Services</a>
+                    </li>
+                    <li><a href="#About"
+                            class="pb-1 border-b-2 border-transparent hover:border-[#F66844] transition-all duration-300">About</a>
+                    </li>
+                    <li><a href="#Contacts"
+                            class="pb-1 border-b-2 border-transparent hover:border-[#F66844] transition-all duration-300">Contacts</a>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-white font-semibold py-2 px-4 rounded-md shadow-md hover:scale-105 transition-transform duration-200">
+                            Join Us
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        
+    </header>
+    <main>
+        <p class="h-96">hellow</p>
+    </main>
+    <footer></footer>
+    <!-- Toggle Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
