@@ -15,6 +15,9 @@
     <!-- Link: Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!--Link: AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Link: Font Awesome -->
     <script src="https://kit.fontawesome.com/202877dedb.js" crossorigin="anonymous"></script>
 
@@ -76,7 +79,7 @@
         <!-- hero section -->
         <section
             class=" bg-[url('images/banner2.jpg')] bg-no-repeat  bg-right lg:bg-contain bg-cover min-h-screen px-6 py-20 md:px-12 lg:px-28 flex items-center">
-            <div>
+            <div data-aos="fade-right">
                 <div
                     class="lg:bg-gradient-to-b from-[rgba(57,57,57,0.25)] to-[rgba(57,57,57,0)] lg:backdrop-blur-sm w-full  lg:w-[500px] text-center">
                     <h1 class="text-5xl  lg:text-6xl font-semibold leading-tight ">
@@ -90,7 +93,8 @@
                     </p>
                 </div>
 
-                <div class="flex flex-wrap justify-center items-center gap-4 mt-8">
+                <div class="flex flex-wrap justify-center items-center gap-4 mt-8 " data-aos="fade-up"
+                    data-aos-delay="200">
                     <button
                         class="bg-gradient-to-r from-[#F66844] to-[#FF921B] py-2.5 sm:py-3 px-5 sm:px-6 rounded-md shadow-md hover:scale-105 transition-transform duration-200 font-medium text-white">
                         Get Started
@@ -103,11 +107,14 @@
                 </div>
             </div>
 
-            <div
+            <div data-aos="fade-left" data-aos-delay="400"
                 class="absolute bg-gradient-to-r from-[#F66844] to-[#FF921B] inline-block px-6 py-4 space-x-8 [clip-path:polygon(0_0,100%_0,80%_100%,0%_100%)] my-8 bottom-[-48px] sm:bottom-[-56px] left-0 text-white">
-                <i class="fa-brands fa-google text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
-                <i class="fa-brands fa-facebook text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
-                <i class="fa-brands fa-youtube text-xl pr-12 transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
+                <i
+                    class="fa-brands fa-google text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
+                <i
+                    class="fa-brands fa-facebook text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
+                <i
+                    class="fa-brands fa-youtube text-xl pr-12 transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
             </div>
         </section>
 
@@ -119,12 +126,13 @@
         <section
             class=" bg-[url('images/image.png')] bg-no-repeat  bg-right bg-cover md:bg-contain bg-black opacity-100 px-6 py-20 md:px-12 lg:px-28 flex items-start text-white backdrop:blur-md ">
             <div class="">
-                <p class="text-3xl  md:text-4xl py-6 font-semibold text-center md:text-left">
+                <p data-aos="fade-up" data-aos-duration="1000"
+                    class="text-3xl  md:text-4xl py-6 font-semibold text-center md:text-left">
                     Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0">
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center lg:border-b-2 lg:border-r-2 border-[#FF921B] p-4 gap-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/dd3e018a3d2f2369fba453500f39d66389e4468d.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Weight Loss</h2>
@@ -134,7 +142,7 @@
                         </p>
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center gap-4 lg:border-b-2 lg:border-r-2 border-[#FF921B] p-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/353e13b178154ff8f93030bdf747ae8f09487bfc.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Classic Yoga</h2>
@@ -144,7 +152,7 @@
                         </p>
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center gap-4 lg:border-b-2 border-[#FF921B] p-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/0efe033c1039ebddb14739ec684771b411a9d455.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Cycling</h2>
@@ -154,7 +162,7 @@
                         </p>
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center gap-4 lg:border-r-2 border-[#FF921B] p-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/27d1f26a5de92166ad6ac65cad11104741ad08eb.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Body Building</h2>
@@ -164,7 +172,7 @@
                         </p>
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center gap-4 lg:border-r-2 border-[#FF921B] p-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/f2bcf398198db16f97735227138b66948ec317ad.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Musculation</h2>
@@ -174,7 +182,7 @@
                         </p>
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="800"
                         class="flex flex-col justify-center items-center gap-4 border-[#FF921B] p-4 bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:bg-none lg:backdrop-blur-none">
                         <img src="./images/24276d0477ac9fe2e60585e01b6721cae6107585.png" alt="" class="h-16 w-16">
                         <h2 class="text-base font-semibold text-center">Fitness Running</h2>
@@ -190,10 +198,11 @@
         <!-- Subscribe to plan section -->
         <section class="bg-black text-white ">
             <div class=" w-10/12 mx-auto ">
-                <p class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
+                <p data-aos="fade-up" data-aos-duration="1000"
+                    class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
                     Subscribe To <span class="text-[#FF921B]">Plans</span>
                 </p>
-                <div
+                <div data-aos="fade-right" data-aos-duration="1000"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-10 md:gap-16 ">
                     <div
                         class="bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] backdrop-blur-sm  py-8 text-center space-y-6  rounded-2xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] transition-all duration-300 hover:shadow-[0_6px_40px_rgba(255,146,27,0.3)] mt-2 lg:mt-12">
@@ -206,7 +215,7 @@
                             class="border border-[#FF921B] px-6 py-1   shadow-md hover:scale-105 transition-transform duration-200 font-medium">Select
                             Plan</button>
                     </div>
-                    <div
+                    <div data-aos="zoom-in" data-aos-duration="1000"
                         class="relative bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] backdrop-blur-sm px-16 py-8 text-center space-y-6  rounded-2xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] transition-all duration-300 hover:shadow-[0_6px_40px_rgba(255,146,27,0.3)]">
                         <button
                             class="absolute -top-5 left-26 md:left-20 lg:left-28 bg-white px-4 py-2 text-black rounded-lg">
@@ -224,7 +233,7 @@
                         </button>
                     </div>
 
-                    <div
+                    <div data-aos="fade-up-right" data-aos-duration="1000"
                         class="bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] backdrop-blur-sm px-16 py-8 text-center space-y-6  rounded-2xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] transition-all duration-300 hover:shadow-[0_6px_40px_rgba(255,146,27,0.3)] mt-2 lg:mt-12">
                         <h3 class="text-2xl font-semibold">Fit</h3>
                         <p class="text-base font-normal text-white/50">Plan Exp. 16/11/2024</p>
@@ -243,28 +252,33 @@
         <!-- trainer Section start here -->
         <section class="bg-black text-white ">
             <div class="w-10/12 mx-auto py-20">
-                <p class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
+                <p data-aos="fade-up" data-aos-duration="1000"
+                    class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
                     Join Out <span class="text-[#FF921B]">Trainer</span>
                 </p>
                 <div class="flex flex-wrap gap-16 justify-center items-center my-6 ">
                     <img src="./images/trainer_01.png" alt=""
-                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
+                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300"
+                        data-aos="fade-right" data-aos-duration="1000">
                     <img src="./images/trainer_02.png" alt=""
-                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
+                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300"
+                        data-aos="zoom-in" data-aos-duration="1000">
                     <img src="./images/trainer_03.png" alt=""
-                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
+                        class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300"
+                        data-aos="fade-left" data-aos-duration="1000">
                 </div>
             </div>
         </section>
         <!-- mambership section -->
         <section class="bg-black text-white min-h-screen py-6 lg:py-12">
             <div class="w-10/12 mx-auto">
-                <p class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left mb-5">
+                <p data-aos="fade-up" data-aos-duration="1000"
+                    class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left mb-5">
                     Why Join With <span class="text-[#FF921B]">Us?</span>
                 </p>
                 <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 relative">
 
-                    <div
+                    <div data-aos="fade-right" data-aos-duration="1000"
                         class="w-full lg:w-[646px] bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] backdrop-blur-sm p-8 rounded-2xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)] text-center lg:text-left">
                         <ul class="list-disc marker:text-[#FF921B] text-white space-y-4 pl-5">
                             <li class="text-xl sm:text-2xl font-semibold">Best Gym</li>
@@ -277,7 +291,7 @@
                             See More Benefits
                         </button>
                     </div>
-                    <div class="relative flex justify-center">
+                    <div class="relative flex justify-center" data-aos="fade-left" data-aos-duration="1000">
                         <img src="./images/join_us_01.png" alt="Join Us 1"
                             class="relative lg:-top-28 shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
                         <img src="./images/join_us_02.png" alt="Join Us 2"
@@ -363,6 +377,14 @@
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
         });
     </script>
 </body>
