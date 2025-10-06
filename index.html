@@ -18,6 +18,9 @@
     <!-- Link: Font Awesome -->
     <script src="https://kit.fontawesome.com/202877dedb.js" crossorigin="anonymous"></script>
 
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
     <style>
         body {
             font-family: "Open Sans", sans-serif;
@@ -87,7 +90,7 @@
                     </p>
                 </div>
 
-                <div class="flex flex-wrap sm:items-center gap-4 mt-8 sm:mt-12">
+                <div class="flex flex-wrap justify-center items-center gap-4 mt-8">
                     <button
                         class="bg-gradient-to-r from-[#F66844] to-[#FF921B] py-2.5 sm:py-3 px-5 sm:px-6 rounded-md shadow-md hover:scale-105 transition-transform duration-200 font-medium text-white">
                         Get Started
@@ -101,10 +104,10 @@
             </div>
 
             <div
-                class="absolute bg-gradient-to-r from-[#F66844] to-[#FF921B] inline-block px-4 sm:px-6 py-3 sm:py-4 space-x-5 sm:space-x-8 [clip-path:polygon(0_0,100%_0,80%_100%,0%_100%)] my-8 bottom-[-48px] sm:bottom-[-56px] left-0 text-white">
-                <i class="fa-brands fa-google text-lg sm:text-xl"></i>
-                <i class="fa-brands fa-facebook text-lg sm:text-xl"></i>
-                <i class="fa-brands fa-youtube text-lg sm:text-xl pr-8 sm:pr-12"></i>
+                class="absolute bg-gradient-to-r from-[#F66844] to-[#FF921B] inline-block px-6 py-4 space-x-8 [clip-path:polygon(0_0,100%_0,80%_100%,0%_100%)] my-8 bottom-[-48px] sm:bottom-[-56px] left-0 text-white">
+                <i class="fa-brands fa-google text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
+                <i class="fa-brands fa-facebook text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
+                <i class="fa-brands fa-youtube text-xl pr-12 transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
             </div>
         </section>
 
@@ -256,7 +259,7 @@
         <!-- mambership section -->
         <section class="bg-black text-white min-h-screen py-6 lg:py-12">
             <div class="w-10/12 mx-auto">
-                <p class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
+                <p class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left mb-5">
                     Why Join With <span class="text-[#FF921B]">Us?</span>
                 </p>
                 <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 relative">
@@ -275,9 +278,10 @@
                         </button>
                     </div>
                     <div class="relative flex justify-center">
-                        <img src="./images/join_us_01.png" alt="Join Us 1" class="relative lg:-top-28">
+                        <img src="./images/join_us_01.png" alt="Join Us 1"
+                            class="relative lg:-top-28 shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
                         <img src="./images/join_us_02.png" alt="Join Us 2"
-                            class="absolute top-32 -right-20 hidden lg:block">
+                            class="absolute top-32 -right-20 hidden lg:block shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
                     </div>
                 </div>
             </div>
@@ -285,6 +289,72 @@
 
     </main>
     <footer>
+        <!-- footer section -->
+        <section>
+            <div class="bg-black/90  text-white">
+                <div class="flex flex-col lg:flex-row justify-between items-center w-10/12 mx-auto py-20 gap-20">
+                    <div>
+                        <div class="flex flex-col justify-center items-center ">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/logo_left.png" alt="">
+                                <p class="text-[#F66844] text-2xl">Bodyshape</p>
+                                <img src="./images/logo_right.png" alt="">
+                            </div>
+                            <p class="text-[#F66844] text-[12px] font-normal">Unleash your inner athlete</p>
+                        </div>
+                        <p class="text-xl font-semibold mt-6 ">Support Your Need To <br>
+                            Much Fitness Goal</p>
+                    </div>
+                    <div class="flex  justify-between items-center gap-6 md:gap-20">
+                        <ul class="space-y-2">
+                            <li class="text-xl font-semibold pb-6">Company</li>
+                            <li class="text-base font-normal text-white/50">About</li>
+                            <li class="text-base font-normal text-white/50">Careers</li>
+                            <li class="text-base font-normal text-white/50">Blogs</li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="text-xl font-semibold pb-6">Contact</li>
+                            <li class="text-base font-normal text-white/50">Help </li>
+                            <li class="text-base font-normal text-white/50">FAQ</li>
+                            <li class="text-base font-normal text-white/50">Press</li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="text-xl font-semibold pb-6">More</li>
+                            <li class="text-base font-normal text-white/50">Program</li>
+                            <li class="text-base font-normal text-white/50">Plan</li>
+                            <li class="text-base font-normal text-white/50">Method</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xl font-semibold pb-6">Popular Tags</p>
+                        <div class="grid grid-cols-3 justify-center items-center gap-2">
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Abs</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Workout</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Nutrition</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Boxing</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Gym</button>
+                            <button
+                                class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-sm px-3 py-2  text-white transition-all duration-300">Facilities</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Plans</button>
+                            <button
+                                class="bg-white/50 text-sm px-3 py-2  transition-all duration-300 hover:bg-gradient-to-r hover:from-[#F66844] hover:to-[#FF921B] hover:text-white">Trainers</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="bg-[#FF921B] flex justify-center items-center">
+                <p class="text-xl font-base text-white p-6">&copy 2025 All Rights Reserved</p>
+            </div>
+
+        </section>
     </footer>
     <!-- Toggle Script -->
     <script>
