@@ -32,7 +32,7 @@
 </head>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header id="Home" class="bg-black text-white">
         <!-- Navbar -->
         <nav class="bg-black/80 border-b border-white/20 backdrop-blur-md p-4 fixed top-0 left-0 w-full z-50">
@@ -93,7 +93,7 @@
                     </p>
                 </div>
 
-                <div class="flex flex-wrap justify-center items-center gap-4 mt-8 " data-aos="fade-up"
+                <div class="flex flex-wrap justify-center items-center gap-4 mt-8 " data-aos="zoom-in"
                     data-aos-delay="200">
                     <button
                         class="bg-gradient-to-r from-[#F66844] to-[#FF921B] py-2.5 sm:py-3 px-5 sm:px-6 rounded-md shadow-md hover:scale-105 transition-transform duration-200 font-medium text-white">
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="400"
+            <div data-aos="zoom-in" data-aos-delay="400"
                 class="absolute bg-gradient-to-r from-[#F66844] to-[#FF921B] inline-block px-6 py-4 space-x-8 [clip-path:polygon(0_0,100%_0,80%_100%,0%_100%)] my-8 bottom-[-48px] sm:bottom-[-56px] left-0 text-white">
                 <i
                     class="fa-brands fa-google text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"></i>
@@ -126,7 +126,7 @@
         <section
             class=" bg-[url('images/image.png')] bg-no-repeat  bg-right bg-cover md:bg-contain bg-black opacity-100 px-6 py-20 md:px-12 lg:px-28 flex items-start text-white backdrop:blur-md ">
             <div class="">
-                <p data-aos="fade-up" data-aos-duration="1000"
+                <p data-aos="zoom-in" data-aos-duration="1000"
                     class="text-3xl  md:text-4xl py-6 font-semibold text-center md:text-left">
                     Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
                 </p>
@@ -198,7 +198,7 @@
         <!-- Subscribe to plan section -->
         <section class="bg-black text-white ">
             <div class=" w-10/12 mx-auto ">
-                <p data-aos="fade-up" data-aos-duration="1000"
+                <p data-aos="zoom-in" data-aos-duration="1000"
                     class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
                     Subscribe To <span class="text-[#FF921B]">Plans</span>
                 </p>
@@ -233,7 +233,7 @@
                         </button>
                     </div>
 
-                    <div data-aos="fade-up-right" data-aos-duration="1000"
+                    <div data-aos="zoom-in-right" data-aos-duration="1000"
                         class="bg-[linear-gradient(180deg,rgba(57,57,57,0.25)_0%,rgba(57,57,57,0)_100%)] backdrop-blur-sm px-16 py-8 text-center space-y-6  rounded-2xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] transition-all duration-300 hover:shadow-[0_6px_40px_rgba(255,146,27,0.3)] mt-2 lg:mt-12">
                         <h3 class="text-2xl font-semibold">Fit</h3>
                         <p class="text-base font-normal text-white/50">Plan Exp. 16/11/2024</p>
@@ -252,7 +252,7 @@
         <!-- trainer Section start here -->
         <section class="bg-black text-white ">
             <div class="w-10/12 mx-auto py-20">
-                <p data-aos="fade-up" data-aos-duration="1000"
+                <p data-aos="zoom-in" data-aos-duration="1000"
                     class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left">
                     Join Out <span class="text-[#FF921B]">Trainer</span>
                 </p>
@@ -265,14 +265,14 @@
                         data-aos="zoom-in" data-aos-duration="1000">
                     <img src="./images/trainer_03.png" alt=""
                         class=" shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300"
-                        data-aos="fade-left" data-aos-duration="1000">
+                        data-aos="zoom-in" data-aos-duration="1000">
                 </div>
             </div>
         </section>
         <!-- mambership section -->
         <section class="bg-black text-white min-h-screen py-6 lg:py-12">
             <div class="w-10/12 mx-auto">
-                <p data-aos="fade-up" data-aos-duration="1000"
+                <p data-aos="zoom-in" data-aos-duration="1000"
                     class="text-3xl md:text-4xl py-6 font-semibold text-center md:text-left mb-5">
                     Why Join With <span class="text-[#FF921B]">Us?</span>
                 </p>
@@ -291,7 +291,7 @@
                             See More Benefits
                         </button>
                     </div>
-                    <div class="relative flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative flex justify-center" >
                         <img src="./images/join_us_01.png" alt="Join Us 1"
                             class="relative lg:-top-28 shadow-lg hover:scale-105 hover:shadow-[0_0_25px_#FF921B] transition-all duration-300">
                         <img src="./images/join_us_02.png" alt="Join Us 2"
@@ -384,7 +384,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
+            offset: 80, 
+            duration: 700,
             once: true,
+            easing: 'ease-in-out'
+
         });
     </script>
 </body>
